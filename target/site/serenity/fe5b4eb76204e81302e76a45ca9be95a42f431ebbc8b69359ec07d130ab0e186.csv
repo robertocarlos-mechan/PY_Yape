@@ -1,0 +1,4 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"SOLI BCP","Realizar la operacion pago qr","SUCCESS","2023-12-14T09:09:20.39836-05:00[America/Lima]","0.0","149.83"
+"SOLI BCP","Realizar todos los flujos de YAPE","SUCCESS","2023-12-14T09:19:01.654872-05:00[America/Lima]","0.0","345.45"
+"SOLI BCP","Realizar el pago de servicio LUZ ELECTRICA","SUCCESS","2023-12-14T08:21:54.603872-05:00[America/Lima]","0.0","150.12"

@@ -1,0 +1,5 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"SOLI BCP","Realizar todos los flujos de YAPE","FAILURE","2023-12-14T14:51:56.788934-05:00[America/Lima]","0.0","343.99"
+"SOLI BCP","Validar que el pin de usuario sea correcta","FAILURE","2023-09-27T11:30:08.338792-05:00[America/Lima]","0.0","66.76"
+"SOLI BCP","Realizar el pago de servicio ENTEL","ERROR","2023-09-06T08:46:25.16809-05:00[America/Lima]","0.0","14.21"
+"SOLI BCP","Realizar el envio a otro BANCO","ERROR","2023-12-13T14:18:39.068319-05:00[America/Lima]","0.0","17.64"

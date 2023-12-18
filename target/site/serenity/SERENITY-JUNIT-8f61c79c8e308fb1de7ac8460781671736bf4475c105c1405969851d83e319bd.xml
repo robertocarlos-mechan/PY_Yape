@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="1" failures="0" name="SOLI BCP" skipped="0" tests="1" time="17.64" timestamp="2023-12-13 02:18:39"><testcase name="Realizar el envio a otro BANCO"><error message="Could not start a new session. Could not start a new session. Response code 404. Message: The session identified by 2e1757d7-d562-458f-b31c-82ae68c7590f is not known &#10;Host info: host: 'PE-IT001279.bbrouter', ip: 'fe80:0:0:0:87e:cd9c:3817:53f4%en0'&#10;Build info: version: '4.5.3', revision: '4b786a1e430'&#10;System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.5.1', java.version: '11.0.18'&#10;Driver info: io.appium.java_client.android.AndroidDriver&#10;Command: [null, newSession {capabilities=[{appium:appium.newCommandTimeout=200000, appium:app=/Users/bcp/Documents/qa-main/apps/app-wallet-release-protected.apk, appium:ensureWebviewsHavePages=true, appium:deviceName=AutomationTesting, platformName=ANDROID, appium:platformVersion=14}], desiredCapabilities=Capabilities {appium.newCommandTimeout: 200000, appium:app: /Users/bcp/Documents/qa-mai..., appium:ensureWebviewsHavePages: true, deviceName: AutomationTesting, platformName: ANDROID, platformVersion: 14}}]&#10;Capabilities {}&#10;Build info: version: '4.5.3', revision: '4b786a1e430'&#10;System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.5.1', java.version: '11.0.18'&#10;Driver info: driver.version: AndroidDriver" type="org.openqa.selenium.SessionNotCreatedException">Could not start a new session. Could not start a new session. Response code 404. Message: The session identified by 2e1757d7-d562-458f-b31c-82ae68c7590f is not known 
+Host info: host: 'PE-IT001279.bbrouter', ip: 'fe80:0:0:0:87e:cd9c:3817:53f4%en0'
+Build info: version: '4.5.3', revision: '4b786a1e430'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.5.1', java.version: '11.0.18'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:appium.newCommandTimeout=200000, appium:app=/Users/bcp/Documents/qa-main/apps/app-wallet-release-protected.apk, appium:ensureWebviewsHavePages=true, appium:deviceName=AutomationTesting, platformName=ANDROID, appium:platformVersion=14}], desiredCapabilities=Capabilities {appium.newCommandTimeout: 200000, appium:app: /Users/bcp/Documents/qa-mai..., appium:ensureWebviewsHavePages: true, deviceName: AutomationTesting, platformName: ANDROID, platformVersion: 14}}]
+Capabilities {}
+Build info: version: '4.5.3', revision: '4b786a1e430'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.5.1', java.version: '11.0.18'
+Driver info: driver.version: AndroidDriver</error><system-err>Could not start a new session. Could not start a new session. Response code 404. Message: The session identified by 2e1757d7-d562-458f-b31c-82ae68c7590f is not known 
+Host info: host: 'PE-IT001279.bbrouter', ip: 'fe80:0:0:0:87e:cd9c:3817:53f4%en0'
+Build info: version: '4.5.3', revision: '4b786a1e430'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.5.1', java.version: '11.0.18'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:appium.newCommandTimeout=200000, appium:app=/Users/bcp/Documents/qa-main/apps/app-wallet-release-protected.apk, appium:ensureWebviewsHavePages=true, appium:deviceName=AutomationTesting, platformName=ANDROID, appium:platformVersion=14}], desiredCapabilities=Capabilities {appium.newCommandTimeout: 200000, appium:app: /Users/bcp/Documents/qa-mai..., appium:ensureWebviewsHavePages: true, deviceName: AutomationTesting, platformName: ANDROID, platformVersion: 14}}]
+Capabilities {}
+Build info: version: '4.5.3', revision: '4b786a1e430'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.5.1', java.version: '11.0.18'
+Driver info: driver.version: AndroidDriver
+io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:126)
+io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:194)
+io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
+io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:229)
+io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:80)
+io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:92)
+io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:117)
+co.com.bcp.steps.conf.Hooks.setup(Hooks.java:32)
+</system-err></testcase></testsuite>

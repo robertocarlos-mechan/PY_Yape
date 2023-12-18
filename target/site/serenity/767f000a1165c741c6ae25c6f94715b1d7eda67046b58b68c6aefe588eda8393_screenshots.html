@@ -1,0 +1,291 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="bootstrap-icons/font/bootstrap-icons.css"><!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.11.3/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.11.3/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.11.3/time-elapsed-dhms.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+<script>
+    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
+
+        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
+        var multipliers = {
+            ms: 1,
+            s: 1000,
+            m: 60000,
+            h: 3600000,
+            d: 86400000
+        };
+
+        if (matches) {
+            var multiplier = multipliers[matches[2].toLowerCase()];
+            return parseFloat(matches[1]) * multiplier;
+        } else {
+            return -1;
+        };
+    };
+</script>
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/>
+<!--CHART.JS-->
+<script src="chartjs/chart.js"></script>
+<script src="chartjs/chartjs-plugin-datalabels@2.0.0"></script>
+<script src="chartjs/patternomaly.min.js"></script>
+<script>
+    // Register the plugin to all charts:
+    Chart.register(ChartDataLabels);
+</script>
+<!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle">SOLI APP - Pruebas Automatizadas Android App</span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="be1d0bd53c912b41f1b864f658653253c5f07ff1e592913190bb41e2f2405a52.html">SOLI BCP</a></span>
+                > <span class="truncate-60"><a
+                    href="767f000a1165c741c6ae25c6f94715b1d7eda67046b58b68c6aefe588eda8393.html">Realizar la operacion agregar dinero </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="bi bi-journal-check"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="bi bi-journal-text"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="7ea0a5e2d679b9deeda9910ae4a9bcd3a281e0d908303a9e16e486103e98880c.html"><i class="bi bi-chat-text"></i> Capabilities</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 13-12-2023 15:39</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fs-2 bi bi-chat-left-quote large-icon"></i>
+                                    <span class="story-header-title">SOLI BCP </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="3bf599944eeaf53a385ec84ebbc20526e2e393086417d8513a4d03a965358716.html">Agregar Dinero Por Qr
+                                    (tag)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">Realizar la operacion agregar dinero
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+    <div class="story-title">
+        <h3>Scenario:</h3>
+        <div class="scenario">Dado Ingreso a soli<br>Y valido que estoy dentro de soli<br>Cuando ingreso opcion ya tengo cuenta<br>Y ingreso mi celular &quot;&lt;celular&gt;&quot;<br>Y ingreso mi password &quot;&lt;password&gt;&quot;<br>Y doy clic al boton ingresar<br>Y valido que inicie sesion<br>Y ingreso a la opcion agregar dinero<br>Y valido que estoy en la pantalla Agregar Dinero<br>Y doy clic al boton genera tu codigo QR<br>Entonces valido que se haya generado mi codigo qr correctamente</div>
+    </div>
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="9301544caa0139e796fa1474b4e68009c263d2d18db35f151d748e095866bf09.png" title=" 1: Realizar la operacion agregar dinero ({celular=70621732, password=0001})" width="1080"/>
+                <img src="9301544caa0139e796fa1474b4e68009c263d2d18db35f151d748e095866bf09.png" title=" Dado Ingreso a soli" width="1080"/>
+                <img src="9301544caa0139e796fa1474b4e68009c263d2d18db35f151d748e095866bf09.png" title=" Y valido que estoy dentro de soli" width="1080"/>
+                <img src="9301544caa0139e796fa1474b4e68009c263d2d18db35f151d748e095866bf09.png" title=" Then the Ingreso a loguearme is enabled -  should be (true)" width="1080"/>
+                <img src="9301544caa0139e796fa1474b4e68009c263d2d18db35f151d748e095866bf09.png" title=" Cuando ingreso opcion ya tengo cuenta" width="1080"/>
+                <img src="9301544caa0139e796fa1474b4e68009c263d2d18db35f151d748e095866bf09.png" title=" Tester pantalla tengo cuenta" width="1080"/>
+                <img src="9301544caa0139e796fa1474b4e68009c263d2d18db35f151d748e095866bf09.png" title=" TESTER clicks on Ingreso a loguearme" width="1080"/>
+                <img src="03e429844366479520fd55b5af03cca967daa297c861ab99f5153faa5664a3df.png" title=" TESTER clicks on Ingreso a loguearme (completed)" width="1080"/>
+                <img src="03e429844366479520fd55b5af03cca967daa297c861ab99f5153faa5664a3df.png" title=" Tester pantalla tengo cuenta (completed)" width="1080"/>
+                <img src="03e429844366479520fd55b5af03cca967daa297c861ab99f5153faa5664a3df.png" title=" Cuando ingreso opcion ya tengo cuenta (completed)" width="1080"/>
+                <img src="03e429844366479520fd55b5af03cca967daa297c861ab99f5153faa5664a3df.png" title=" Y ingreso mi celular &quot;70621732&quot;" width="1080"/>
+                <img src="2fd2d04947a43637b231c69f342a5362a350440e2c8329454130a507d174f18d.png" title=" Tester ingreso celular registrado" width="1080"/>
+                <img src="661e5088a03103589d326e8ef53f7f8b4c3ca1a7fc4b8fe64c452581cdfa0967.png" title=" TESTER clicks on Ingreso celular" width="1080"/>
+                <img src="dcfe738f0cf061e66f6d0334bbc938dddb9c6131efebc649ec3e61259cfe211d.png" title=" TESTER clicks on Ingreso celular (completed)" width="1080"/>
+                <img src="dcfe738f0cf061e66f6d0334bbc938dddb9c6131efebc649ec3e61259cfe211d.png" title=" TESTER enters '70621732' into Ingreso celular" width="1080"/>
+                <img src="b842e9bbb659d44ae23426c0b2972ad40f5aec6bcd99503e087d4faddaef31b1.png" title=" TESTER enters '70621732' into Ingreso celular (completed)" width="1080"/>
+                <img src="b842e9bbb659d44ae23426c0b2972ad40f5aec6bcd99503e087d4faddaef31b1.png" title=" Tester ingreso celular registrado (completed)" width="1080"/>
+                <img src="b842e9bbb659d44ae23426c0b2972ad40f5aec6bcd99503e087d4faddaef31b1.png" title=" Y ingreso mi celular &quot;70621732&quot; (completed)" width="1080"/>
+                <img src="b842e9bbb659d44ae23426c0b2972ad40f5aec6bcd99503e087d4faddaef31b1.png" title=" Y ingreso mi password &quot;0001&quot;" width="1080"/>
+                <img src="bfce0b9fd0a1b43441b205c94ef82910afa7923cfe3560d4058e2013d549427b.png" title=" Tester ingreso password" width="1080"/>
+                <img src="bfce0b9fd0a1b43441b205c94ef82910afa7923cfe3560d4058e2013d549427b.png" title=" TESTER enters '0' into Ingreso pin1" width="1080"/>
+                <img src="ed627c2735b0f118174ea1733a0d4fde724fb644d6d292718b299a6750a20625.png" title=" TESTER enters '0' into Ingreso pin1 (completed)" width="1080"/>
+                <img src="ed627c2735b0f118174ea1733a0d4fde724fb644d6d292718b299a6750a20625.png" title=" TESTER enters '0' into Ingreso pin2" width="1080"/>
+                <img src="a079ffe800a336fa727ccefa188cb66ab871773d57ed866c4a56896b437f6c19.png" title=" TESTER enters '0' into Ingreso pin2 (completed)" width="1080"/>
+                <img src="a079ffe800a336fa727ccefa188cb66ab871773d57ed866c4a56896b437f6c19.png" title=" TESTER enters '0' into Ingreso pin3" width="1080"/>
+                <img src="101141d7357d9438057b0888ebeaf076b3261af6e4f79832f58e1ccb6dfeac5b.png" title=" TESTER enters '0' into Ingreso pin3 (completed)" width="1080"/>
+                <img src="101141d7357d9438057b0888ebeaf076b3261af6e4f79832f58e1ccb6dfeac5b.png" title=" TESTER enters '1' into Ingreso pin4" width="1080"/>
+                <img src="6e94683495d3be8ae26ee33546d92fd6f2b82587c2f7f5d961361927975bb5fa.png" title=" TESTER enters '1' into Ingreso pin4 (completed)" width="1080"/>
+                <img src="6e94683495d3be8ae26ee33546d92fd6f2b82587c2f7f5d961361927975bb5fa.png" title=" Tester ingreso password (completed)" width="1080"/>
+                <img src="6e94683495d3be8ae26ee33546d92fd6f2b82587c2f7f5d961361927975bb5fa.png" title=" Y ingreso mi password &quot;0001&quot; (completed)" width="1080"/>
+                <img src="6e94683495d3be8ae26ee33546d92fd6f2b82587c2f7f5d961361927975bb5fa.png" title=" Y doy clic al boton ingresar" width="1080"/>
+                <img src="b610912e92c4aee5eee0ee91abe51a1865c6c1d3a3f37536a54423580b6f7c7e.png" title=" Tester ingreso soli" width="1080"/>
+                <img src="782a2e3c4485271a41a44fd51fba4ffeb179ae3b22ac4b810b8cc5111d0acd88.png" title=" TESTER clicks on Boton de Logueo Usuario" width="1080"/>
+                <img src="ca6a3f8a13a7120a3f4351b8f93967ecc1748d00b7be232f571d8bce3e6807c0.png" title=" TESTER clicks on Boton de Logueo Usuario (completed)" width="1080"/>
+                <img src="ca6a3f8a13a7120a3f4351b8f93967ecc1748d00b7be232f571d8bce3e6807c0.png" title=" Tester ingreso soli (completed)" width="1080"/>
+                <img src="ca6a3f8a13a7120a3f4351b8f93967ecc1748d00b7be232f571d8bce3e6807c0.png" title=" Y doy clic al boton ingresar (completed)" width="1080"/>
+                <img src="ca6a3f8a13a7120a3f4351b8f93967ecc1748d00b7be232f571d8bce3e6807c0.png" title=" Y valido que inicie sesion" width="1080"/>
+                <img src="b61e5d2e16cbc3e84ab577f4689771166d44bc15a5edf8a682ca9f579a519c2c.png" title=" Y valido que inicie sesion (completed)" width="1080"/>
+                <img src="b61e5d2e16cbc3e84ab577f4689771166d44bc15a5edf8a682ca9f579a519c2c.png" title=" Y ingreso a la opcion agregar dinero" width="1080"/>
+                <img src="59543fbf06f0594da4a48c37ea533e479ee28625df477b5c273a80c8abf13c46.png" title=" Tester opcion agregar dinero" width="1080"/>
+                <img src="59543fbf06f0594da4a48c37ea533e479ee28625df477b5c273a80c8abf13c46.png" title=" TESTER clicks on Agregar Dinero" width="1080"/>
+                <img src="a533f1c2c96915cd2f36fbe9bd874596daa7b5450ddae3ae42ab89b125309b6d.png" title=" TESTER clicks on Agregar Dinero (completed)" width="1080"/>
+                <img src="a533f1c2c96915cd2f36fbe9bd874596daa7b5450ddae3ae42ab89b125309b6d.png" title=" Tester opcion agregar dinero (completed)" width="1080"/>
+                <img src="a533f1c2c96915cd2f36fbe9bd874596daa7b5450ddae3ae42ab89b125309b6d.png" title=" Y ingreso a la opcion agregar dinero (completed)" width="1080"/>
+                <img src="a533f1c2c96915cd2f36fbe9bd874596daa7b5450ddae3ae42ab89b125309b6d.png" title=" Y valido que estoy en la pantalla Agregar Dinero" width="1080"/>
+                <img src="b0043aa303553c32cf08e0be7c4dc1172d839a388b0ef33a1ff313f840127ff2.png" title=" Then the Pantalla Agregar Dinero is enabled -  should be (true)" width="1080"/>
+                <img src="b0043aa303553c32cf08e0be7c4dc1172d839a388b0ef33a1ff313f840127ff2.png" title=" Y valido que estoy en la pantalla Agregar Dinero (completed)" width="1080"/>
+                <img src="b0043aa303553c32cf08e0be7c4dc1172d839a388b0ef33a1ff313f840127ff2.png" title=" Y doy clic al boton genera tu codigo QR" width="1080"/>
+                <img src="b0043aa303553c32cf08e0be7c4dc1172d839a388b0ef33a1ff313f840127ff2.png" title=" Tester opcion genera codigo qr" width="1080"/>
+                <img src="b0043aa303553c32cf08e0be7c4dc1172d839a388b0ef33a1ff313f840127ff2.png" title=" TESTER clicks on Pantalla Agregar Dinero" width="1080"/>
+                <img src="bbf08d5bf7493988eacca6c0d67af0d46ceb0caba66bedbcaeb49b4d71781dd0.png" title=" TESTER clicks on Pantalla Agregar Dinero (completed)" width="1080"/>
+                <img src="bbf08d5bf7493988eacca6c0d67af0d46ceb0caba66bedbcaeb49b4d71781dd0.png" title=" Tester opcion genera codigo qr (completed)" width="1080"/>
+                <img src="bbf08d5bf7493988eacca6c0d67af0d46ceb0caba66bedbcaeb49b4d71781dd0.png" title=" Y doy clic al boton genera tu codigo QR (completed)" width="1080"/>
+                <img src="bbf08d5bf7493988eacca6c0d67af0d46ceb0caba66bedbcaeb49b4d71781dd0.png" title=" Entonces valido que se haya generado mi codigo qr correctamente" width="1080"/>
+                <img src="825dedf917cc864b19a1a7e2aea7fda7f88d69d265213d93a6012e3546c0409f.png" title=" Then the Codigo QR generado correctamente is enabled -  should be (true)" width="1080"/>
+                <img src="8d47a6493a3363d08715f9264ac6201ac46de09c2ac5135d377c220c9e1708cf.png" title=" Then the Codigo QR generado correctamente is enabled -  should be (true) (completed)" width="1080"/>
+                <img src="8d47a6493a3363d08715f9264ac6201ac46de09c2ac5135d377c220c9e1708cf.png" title=" Entonces valido que se haya generado mi codigo qr correctamente (completed): <span class='success-color'>SUCCESS</span>" width="1080"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 3.3.10</span>
+</div>
+</body>
+</html>

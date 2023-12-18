@@ -1,0 +1,6 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"SOLI BCP","Realizar la operacion pago qr","SUCCESS","2023-12-14T09:09:20.39836-05:00[America/Lima]","0.0","149.83"
+"SOLI BCP","Realizar el pago de servicio LUZ ELECTRICA","SUCCESS","2023-12-14T08:21:54.603872-05:00[America/Lima]","0.0","150.12"
+"SOLI BCP","Realizar el envio a otros soli","SUCCESS","2023-09-01T10:41:42.994546-05:00[America/Lima]","0.0","139.7"
+"SOLI BCP","Realizar el envio a Banco BCP","SUCCESS","2023-12-13T15:29:44.878802-05:00[America/Lima]","0.0","136.38"
+"SOLI BCP","Realizar el envio a otros yape","SUCCESS","2023-12-14T15:37:06.917842-05:00[America/Lima]","0.0","123.12"
